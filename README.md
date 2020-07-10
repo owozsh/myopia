@@ -26,12 +26,4 @@ The formal version of the theme is still being worked on, so you cannot use it o
 
 Making this theme real and good takes a lot of time of designing and coding. So if you like the project, consider donating to keep me motivated maintaining it :)
 
-<div>
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick" />
-<input type="hidden" name="hosted_button_id" value="6B3MUW2KH4LXN" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
-</form>
-</div>
-
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6B3MUW2KH4LXN&source=url
