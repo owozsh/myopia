@@ -1,0 +1,157 @@
+decoration {
+    background-color: transparent;
+    box-shadow: 0 30px 30px rgba( 0, 0, 0, 0.5);
+    border-radius: 15px;
+    border: 1px solid #000;
+  }
+  
+  window {
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(18, 18, 18, 0.65);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid #000;
+  }
+  
+  headerbar {
+    background-color: rgba(34, 34, 34, 0.6);
+    background-image: none;
+    border-radius: 15px 15px 0 0;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  button {
+    background-color: rgba(255, 255, 255, 0.15);
+    background-image: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:checked {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .close {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  entry {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  overlay,
+  colorswatch {
+    border-radius: 5px;
+  }
+  
+  notebook {
+    background-color: transparent;
+  }
+  
+  notebook stack {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  notebook header {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  notebook header.top {
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  notebook header.top tabs tab:checked {
+    outline: none;
+    box-shadow: 0 -10px 5px -10px #fff, 0 -10px 0px -10px #fff inset;
+  }
+  
+  notebook header.top tabs tab label {
+    font-weight: normal;
+  }
+  
+  box.width-maximized {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+  }
+  
+  .nautilus-path-bar {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  placessidebar {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  grid {
+    background-color: transparent;
+  }
+  
+  grid paned box placessidebar viewport list {
+    border-radius: 10px;
+  }
+  
+  scrolledwindow {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0 0 15px 0;
+  }
+  
+  paned overlay notebook {
+    background-color: transparent;
+    border-radius: 0;
+  }
+  
+  overlay {
+    background-color: transparent;
+  }
+  
+  separator {
+    background-image: none;
+    background-color: transparent;
+    border-radius: 15px;
+  }
+  
+  placessidebar {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: none;
+  }
+  
+  box {
+    border-radius: 0;
+  }
+  
+  terminal-window {
+	background-image: none;
+	background-color: transparent;
+}
+
+row:selected {
+
+	background-image: none;
+	background-color: rgba( 255, 255, 255, 0.1);
+	
+}
+
+viewport {
+	background-color: rgba( 255, 255, 255, 0.05);
+	border-radius: 0 0 0 15px;
+	border-right: rgba( 255, 255, 255, 0.1) solid 1px;
+}
+
+stack, placessidebar {
+	border-radius: 0 0 15px 0;
+}
+
+placessidebar {
+	background-color: transparent;
+	background-image: none;
+}

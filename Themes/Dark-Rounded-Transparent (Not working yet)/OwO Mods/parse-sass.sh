@@ -9,4 +9,4 @@ SASSC_OPT="-M -t compact"
 
 echo Generating the css...
 
-sassc $SASSC_OPT dark.scss gtk-3.0/gtk.css
+sassc $SASSC_OPT dark.scss ../gtk-3.0/gtk.css
