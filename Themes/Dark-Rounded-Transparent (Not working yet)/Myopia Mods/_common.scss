@@ -1,3 +1,23 @@
+// Myopia colors
+
+$border1: 15px;
+$border2: 10px;
+
+$n: none;
+$t: transparent;
+
+$owo-bg: rgba(18, 18, 18, 0.6);
+$owo-bgz: rgba(34, 34, 34, 0.6);
+
+$owo-selected: rgba(255, 255, 255, 0.3);
+$owo-hg: rgba(255, 255, 255, 0.15);
+$owo-entry: rgba(255, 255, 255, 0.1);
+
+$shadow-border: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5);
+$l-border: 1px solid rgba(255, 255, 255, 0.15);
+$d-border: 1px solid rgba(0, 0, 0, 0.5);
+
+
 @function gtkalpha($c,$a) {
   @return unquote("alpha(#{$c},#{$a})");
 }
@@ -6,10 +26,10 @@ $ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 $asset_suffix: if($variant=='dark', '-dark', '');
 $backdrop_transition: 200ms ease-out;
 $button_transition: all 200ms $ease-out-quad;
-$button_radius: 5px;
-$menu_radius: 5px;
-$window_radius: $button_radius + 3;
-$popover_radius: $button_radius + 4;
+$button_radius: 10px;
+$menu_radius: 10px;
+$window_radius: $button_radius + 5;
+$popover_radius: $button_radius + 6;
 
 // Optional compact sizes for buttons, headerbar and headerbar widgets
 $_sizevariant: 'default'; //compact otherwise
@@ -46,11 +66,7 @@ $_switch_margin: if($_sizevariant=='default', 10px, 7px);
   // to the adwaita engine: using real CSS properties is faster,
   // and we don't use any outlines for now.
 
-  outline-color: gtkalpha(currentColor, 0.3);
-  outline-style: dashed;
-  outline-offset: -3px;
-  outline-width: 1px;
-  -gtk-outline-radius: $button-radius - 2;
+  outline: none;
 
   -gtk-secondary-caret-color: $selected_bg_color
 }
@@ -319,11 +335,12 @@ entry {
     min-height: $_entry_height;
     padding-left: 8px;
     padding-right: 8px;
-    border: 1px solid;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: $button_radius;
     transition: all 200ms $ease-out-quad;
 
-    @include entry(normal);
+    background-color: $owo-entry;
+    box-shadow: $shadow-border;
 
     image { // icons inside the entry
       &.left { margin-right: 6px; }
@@ -577,11 +594,13 @@ button {
     min-height: 24px;
     min-width: 16px;
     padding: $_btn_pad;
-    border: 1px solid;
+    border: $l-border;
+    box-shadow: $shadow-border;
     border-radius: $button_radius;
     transition: $button_transition;
+    background-color: $owo-entry;
 
-    @include button(normal);
+    
 
     @at-root %button_basic_flat,
     &.flat {
@@ -601,15 +620,14 @@ button {
     }
 
     &:hover {
-      @include button(hover);
+      background-color: $owo-hg;
       -gtk-icon-effect: highlight;
     }
 
     &:active,
     &:checked {
-      @include button(active);
-
-      transition-duration: 50ms;
+      background-color: $owo-selected;
+      transition-duration: 250ms;
     }
 
     &:backdrop {
@@ -636,6 +654,8 @@ button {
 
     &:disabled {
       @include button(insensitive);
+      border: $l-border;
+      box-shadow: $shadow-border;
 
       &:active,
       &:checked { @include button(insensitive-active); }
@@ -1564,12 +1584,10 @@ searchbar > revealer > box {
 headerbar {
   padding: 0 6px;
   min-height: $_headerbar_height;
-  border-width: 0 0 1px;
-  border-style: solid;
-  border-color: $alt_borders_color;
+  border: 1px solid $owo-hg;
   border-radius: 0;
 
-  @include headerbar_fill(darken($bg_color, 10%));
+  background-color: $owo-bgz;  
 
   &:backdrop {
     border-color: $backdrop_borders_color;
@@ -1592,18 +1610,6 @@ headerbar {
     padding-right: 12px;
 
     @extend .dim-label;
-  }
-
-  /* Darken switchbuttons for headerbars. issue #1588 */
-  stackswitcher button:checked,
-  button.toggle:checked {
-
-    background: if($variant == 'light', image(darken($bg_color, 17%)), image(darken($bg_color, 9%)));
-    border-color: darken($borders_color, 3%);
-    border-top-color: darken($borders_color, 8%);
-    &:backdrop {
-      @include button(backdrop-active);
-    }
   }
 
   .selection-mode &,
@@ -4536,10 +4542,11 @@ colorchooser .popover.osd { border-radius: 5px; }
 /**********************
  * Window Decorations *
  *********************/
+
 decoration {
   border-radius: $window_radius $window_radius 0 0;
   // lamefun trick to get rounded borders regardless of CSD use
-  border-width: 0px;
+  border-width: 1px solid #000;
 
   // this needs to be transparent
   // see bug #722563
@@ -4828,4 +4835,9 @@ popover.emoji-completion contents row box {
 
 popover.emoji-completion .emoji:hover {
   background: $popover_hover_color;
+}
+
+window {
+  border: $l-border;
+  border-top: $d-border;
 }
