@@ -10,11 +10,11 @@ The blur doesn't work, it uses transparency only.
 
 This theme is based on Adwaita, for now, it only works "well" overriding Adwaita's css.
 
-## Instalation
+## Installation
 
 ### Overriding Theme
 
-For now, I'd only recomend using the Overriding Theme.
+For now, I'd only recommend using the Overriding Theme.
 
 To use you need to have the Adwaita Dark theme installed and selected, this theme will override some code of it.
 
@@ -22,7 +22,7 @@ To install it, copy the 'gtk.css' file on the 'Overriding Theme' folder and past
 
 ### The Real Theme
 
-To install copy one of the themes on the 'Themes' folder and paste it on '~/.themes', and then, on Gnome Tweaks, select the theme.
+To install, copy one of the themes on the 'Themes' folder and paste it on '~/.themes', and select the theme in Gnome Tweaks.
 
 ## Notes
 
