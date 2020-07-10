@@ -1,4 +1,4 @@
-# Myopia Theme for Gnome
+# Myopia Theme for GTK+
 
 ![](.screenshots/screenshot.png)
 
