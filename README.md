@@ -1,6 +1,10 @@
 # Myopia Theme for GTK+
 
-![](.screenshots/screenshot.png)
+![](.screenshots/00.png)
+
+![](.screenshots/01.png)
+
+![](.screenshots/02.png)
 
 ## Warning
 
