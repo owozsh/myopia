@@ -12,15 +12,13 @@ This is a work in progress. It has some bugs still.
 
 The blur doesn't work, it uses transparency only.
 
+There will be a light theme soon.
+
 This theme is based on Adwaita, but you don't need it to install this theme ;)
 
 ## Installation
 
 To install, copy one of the themes on the 'Themes' folder and paste it on '~/.themes', and select the theme in Gnome Tweaks.
-
-## Notes
-
-There'll be a light theme, an opaque theme and maybe a squared version.
 
 ### Donate! 
 
