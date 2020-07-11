@@ -3,20 +3,6 @@
 $border1: 15px;
 $border2: 10px;
 
-$n: none;
-$t: transparent;
-
-$owo-bg: rgba(18, 18, 18, 0.6);
-$owo-bgz: rgba(34, 34, 34, 0.6);
-
-$owo-selected: rgba(255, 255, 255, 0.3);
-$owo-hg: rgba(255, 255, 255, 0.15);
-$owo-entry: rgba(255, 255, 255, 0.1);
-
-$shadow-border: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5);
-$l-border: 1px solid rgba(255, 255, 255, 0.15);
-$d-border: 1px solid rgba(0, 0, 0, 0.5);
-
 
 @function gtkalpha($c,$a) {
   @return unquote("alpha(#{$c},#{$a})");
@@ -230,7 +216,7 @@ label {
 
 assistant {
   .sidebar {
-    background-color: $base_color;
+    background-color: $owo-entry;
     border-top: 1px solid $borders_color;
 
     &:backdrop {
@@ -641,7 +627,7 @@ button {
         &:checked { @include button(backdrop-active); }
 
         &:disabled {
-          @include button(backdrop-insensitive);
+          @include button(backdrop);
 
           &:active,
           &:checked { @include button(backdrop-insensitive-active); }
@@ -2386,7 +2372,7 @@ notebook {
 
           &:backdrop { box-shadow: none; }
 
-          &:checked { box-shadow: 0 -10px 5px -10px #fff; }
+          &:checked { box-shadow: 0 10px 5px -10px #fff inset; }
         }
       }
     }
@@ -2400,7 +2386,7 @@ notebook {
 
           &:backdrop { box-shadow: none; }
 
-          &:checked { box-shadow: 0 10px 5px -10px #fff; }
+          &:checked { box-shadow: 0 -10px 5px -10px #fff inset; }
         }
       }
     }
@@ -2414,7 +2400,7 @@ notebook {
 
           &:backdrop { box-shadow: none; }
 
-          &:checked { box-shadow: -10px 0 5px -10px #fff;  }
+          &:checked { box-shadow: 10px 0 5px -10px #fff inset;  }
         }
       }
     }
@@ -2428,7 +2414,7 @@ notebook {
 
           &:backdrop { box-shadow: none; }
 
-          &:checked { box-shadow: 10px 0 5px -10px #fff; }
+          &:checked { box-shadow: -10px 0 5px -10px #fff inset; }
         }
       }
     }
@@ -3749,7 +3735,7 @@ frame > border,
   margin: 0;
   padding: 0;
   border-radius: 0;
-  border: 1px solid $borders_color;
+  // border: 1px solid $borders_color;
 
   &.flat { border-style: none; }
 
@@ -3826,7 +3812,7 @@ separator {
  *********/
 list {
   color: $text_color;
-  background-color: $owo-entry;
+  background-color: rgba(255, 255, 255, 0.05);
   border-color: $borders_color;
 
   &:backdrop {
@@ -4020,7 +4006,7 @@ filechooserbutton:drop(active) {
  ***********/
 .sidebar {
   border-style: none;
-  background-color: mix($bg_color, $base_color, 50%);
+  background-color: rgba(255, 255, 255, 0.05);
 
   &:not(separator) {
     @at-root %sidebar_left,
@@ -4100,9 +4086,8 @@ row image.sidebar-icon { opacity: $_placesidebar_icons_opacity; } // dim the sid
                                                                   // on this oddity
 
 placessidebar {
-  
 
-  background-color: $owo-bgz;
+  border-right: $l-border;
 
   row {
     // Needs overriding of the GtkListBoxRow padding
@@ -4175,6 +4160,9 @@ placessidebar {
       }
     }
   }
+
+  //background-color: rgba(255, 255, 255, 0.1);
+
 }
 
 placesview {

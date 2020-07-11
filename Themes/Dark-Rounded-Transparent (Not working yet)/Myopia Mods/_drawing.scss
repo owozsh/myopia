@@ -71,7 +71,7 @@
   @if $t==backdrop-insensitive {
     color: $backdrop_insensitive_color;
     border-color: $backdrop_borders_color;
-    background-color: $insensitive_bg_color;
+    background-color: $backdrop_base_color;
     box-shadow: $_blank_edge;
   }
   @if $t==osd {

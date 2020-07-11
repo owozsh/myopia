@@ -1,6 +1,20 @@
 // When color definition differs for dark and light variant
 // it gets @if ed depending on $variant
 
+$n: none;
+$t: transparent;
+
+$owo-bg: rgba(18, 18, 18, 0.6);
+$owo-bgz: rgba(34, 34, 34, 0.6);
+
+$owo-shl: rgba(255, 255, 255, 0.8);
+$owo-selected: rgba(255, 255, 255, 0.3);
+$owo-hg: rgba(255, 255, 255, 0.15);
+$owo-entry: rgba(255, 255, 255, 0.1);
+
+$shadow-border: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5);
+$l-border: 1px solid rgba(255, 255, 255, 0.15);
+$d-border: 1px solid rgba(0, 0, 0, 0.5);
 
 $base_color: if($variant == 'light', #ffffff, rgba(0, 0, 0, 0.3));
 $text_color: if($variant == 'light', black, white);
@@ -49,7 +63,7 @@ $drop_target_color: #4e9a06;
 
 //insensitive state derived colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
-$insensitive_bg_color: mix($bg_color, $base_color, 60%);
+$insensitive_bg_color: $owo-entry;
 $insensitive_borders_color: $borders_color;
 
 //colors for the backdrop state, derived from the main colors.
@@ -69,9 +83,9 @@ $backdrop_scrollbar_slider_color: mix($backdrop_fg_color, $backdrop_bg_color, 40
 $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdrop_bg_color, $backdrop_base_color, 20%));
 
 //special cased widget colors
-$suggested_bg_color: $selected_bg_color;
+$suggested_bg_color: $owo-shl;
 $suggested_border_color: $selected_borders_color;
-$progress_bg_color: $selected_bg_color;
+$progress_bg_color: $owo-shl;
 $progress_border_color: $selected_borders_color;
 $checkradio_bg_color: if($variant == 'light', $selected_bg_color, lighten($selected_bg_color,10%));
 $checkradio_fg_color: $selected_fg_color;
