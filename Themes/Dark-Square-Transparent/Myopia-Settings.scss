@@ -5,9 +5,12 @@
 $w-br: 0; // Window Border Radius
 $b-br: 0; // Button Border Radius
 
-$bg: rgba(18, 18, 18, 0.6); // Window Background
-$h-bg: rgba(34, 34, 34, 0.6); // Headerbar Background
-$d-bg: rgba(0, 0, 0, 0.3); // Dark Base - Not so important
+$h-size: 'compact'; // Headerbar size: 'compact' or 'default'
+
+$bg: rgba( 22, 22, 22, 0.8); // Window Background
+$o-bg: rgba( 24, 24, 24, 0.98); // Opaquer version of the Background
+$h-bg: rgba(40, 40, 40, 0.8); // Headerbar Background
+$d-bg: rgba(0, 0, 0, 0.5); // Dark Base - Not so important
 $x-bg: rgba(255, 255, 255, 0.1); // Buttons, Entries, ... Background
 $l-bg: rgba(255, 255, 255, 0.05); // List and Sidebar Background
 

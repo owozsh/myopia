@@ -16,7 +16,19 @@ There will be a light theme soon.
 
 ## Installation
 
-To install, copy one of the themes on the 'Themes' folder and paste it on '~/.themes', and select the theme in Gnome Tweaks.
+Make sure you have the "User Themes" extension turned on.
+
+To install, ,copy one of the themes on the 'Themes' folder and paste it on '~/.themes', and select the theme in Gnome Tweaks.
+
+## Tweaking
+
+Make sure to tweak themes inside the original Myopia-GTK repository.
+
+There are some basic customization on every theme folder, called "Myopia-Settings.scss". You can customize colors, transparency and other stuff in this file.
+
+Then, open the selected theme folder on terminal and type "./parse-sass.sh", this will generate your new css file on gtk-3.0.
+
+After all of these steps, follow the Installation guide to get your new Myopia customized theme ;)
 
 ### Donate! 
 
