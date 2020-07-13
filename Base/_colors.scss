@@ -1,9 +1,6 @@
 // When color definition differs for dark and light variant
 // it gets @if ed depending on $variant
 
-$n: none;
-$t: transparent;
-
 $base_color: if($variant == 'light', #ffffff, $d-bg);
 $text_color: if($variant == 'light', black, white);
 $bg_color: if($variant == 'light', #f6f5f4, $bg);
@@ -72,7 +69,7 @@ $backdrop_menu_color: if($variant == 'light', $backdrop_base_color, mix($backdro
 
 //special cased widget colors
 $suggested_bg_color: $sel;
-$suggested_border_color: $selected_borders_color;
+$suggested_border_color: transparent;
 $progress_bg_color: $sel;
 $progress_border_color: $selected_borders_color;
 $checkradio_bg_color: if($variant == 'light', $selected_bg_color, lighten($selected_bg_color,10%));
