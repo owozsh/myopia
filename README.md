@@ -18,7 +18,7 @@ There will be a light theme soon.
 
 Make sure you have the "User Themes" extension turned on.
 
-To install, copy one of the themes on the 'Themes' folder and paste it in `~/.local/share/themes` or `~/.themes`, and select the theme in Gnome Tweaks.
+To install, copy one of the themes in the `Themes` folder and paste it in `~/.local/share/themes` or `~/.themes`, and select the theme in Gnome Tweaks.
 
 ## Tweaking
 
