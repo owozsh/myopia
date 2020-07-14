@@ -4842,5 +4842,10 @@ terminal-window box notebook{
 	border: 1px solid rgba( 255, 255, 255, 0.1) ; 
 }
 
-
+placessidebar.frame {
+  border-radius: 0;
+  border: none;
+  border-right: $l-b;
+  box-shadow: none;
+}
 

@@ -1,15 +1,13 @@
 
 /**** | Myopia Theme Settings | ****/
 
-$w-br: 15px; // Window Border Radius
-$b-br: 10px; // Button Border Radius
-
-$h-size: 'default'; // Headerbar size: 'compact' or 'default'
+$w-br: 0px; // Window Border Radius
+$b-br: 0px; // Button Border Radius
 
 $bg: rgba( 22, 22, 22, 0.8); // Window Background
 $o-bg: rgba( 24, 24, 24, 0.98); // Opaquer version of the Background
 $h-bg: rgba(40, 40, 40, 0.8); // Headerbar Background
-$d-bg: rgba(0, 0, 0, 0.5); // Dark Base - Not so important
+$d-bg: rgba( 22, 22, 22, 0.5); // Dark Base - Not so important
 $x-bg: rgba(255, 255, 255, 0.1); // Buttons, Entries, ... Background
 $l-bg: rgba(255, 255, 255, 0.05); // List and Sidebar Background
 
@@ -21,14 +19,11 @@ $s-b: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5); // Color of the simulated Wind
 $l-b: 1px solid rgba(255, 255, 255, 0.15); // Light Borders
 $d-b: 1px solid rgba(0, 0, 0, 0.5); // Dark Borders
 
-$t-p: 10px; // Terminal Padding
-
 /**** | Generate the css file | ****/
 
 $variant: 'dark';
 
-@import '../../Base/colors';
-@import '../../Base/drawing';
-@import '../../Base/common';
-@import '../../Base/colors-public';
-
+@import '_colors';
+@import '_drawing';
+@import '_common';
+@import '_widgets';

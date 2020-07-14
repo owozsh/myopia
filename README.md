@@ -12,8 +12,6 @@ This is a work in progress. It has some bugs still.
 
 The blur doesn't work, it uses transparency only.
 
-There will be a light theme soon.
-
 ## Installation
 
 Make sure you have the "User Themes" extension turned on.
