@@ -1566,7 +1566,7 @@ headerbar {
   min-height: $_headerbar_height;
   border: $l-b;
   box-shadow: $s-b;
-  border-radius: $w-br $w-br 0px 0px;
+  border-radius: 0px;
   background-color: $h-bg;  
 
   &:backdrop {
