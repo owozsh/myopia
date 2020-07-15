@@ -1566,7 +1566,7 @@ headerbar {
   min-height: $_headerbar_height;
   border: $l-b;
   box-shadow: $s-b;
-  border-radius: 0;
+  border-radius: $w-br $w-br 0px 0px;
   background-color: $h-bg;  
 
   &:backdrop {
@@ -1813,14 +1813,14 @@ headerbar {
 headerbar { // headerbar border rounding
 
   window separator:first-child + &,
-  window &:first-child { &:backdrop, & { border-top-left-radius: 7px; }}
-  window &:last-child { &:backdrop, & { border-top-right-radius: 7px; }}
+  window &:first-child { &:backdrop, & { border-top-left-radius: $w-br; }}
+  window &:last-child { &:backdrop, & { border-top-right-radius: $w-br; }}
 
   window stack & { // tackles the stacked headerbars case
     &:first-child, &:last-child {
       &:backdrop, & {
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
+        border-top-left-radius: $w-br;
+        border-top-right-radius: $w-br;
       }
     }
   }
@@ -2171,7 +2171,7 @@ menubar,
   }
 
   // remove padding and rounding from menubar submenu decoration
-  .csd.popup decoration {border-radius:0;}
+  .csd.popup decoration {border-radius: 0px;}
 }
 
 // Needed to make the border-radius of menus work

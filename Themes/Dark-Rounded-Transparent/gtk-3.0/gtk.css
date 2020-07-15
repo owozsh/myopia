@@ -566,7 +566,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 .inline-toolbar:backdrop, searchbar > revealer > box:backdrop, .location-bar:backdrop { border-color: rgba(4, 4, 4, 0.8); background-color: rgba(16, 16, 16, 0.8); box-shadow: none; transition: 200ms ease-out; }
 
 /*************** Header bars * */
-.titlebar:not(headerbar), headerbar { padding: 0 6px; min-height: 46px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5); border-radius: 0; background-color: rgba(40, 40, 40, 0.8); /* hide the close button separator */ }
+.titlebar:not(headerbar), headerbar { padding: 0 6px; min-height: 46px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5); border-radius: 15px 15px 0px 0px; background-color: rgba(40, 40, 40, 0.8); /* hide the close button separator */ }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: rgba(4, 4, 4, 0.8); background-color: rgba(22, 22, 22, 0.8); background-image: none; box-shadow: inset 0 1px rgba(238, 238, 236, 0.07); transition: 200ms ease-out; }
 
@@ -640,11 +640,11 @@ headerbar.titlebar headerbar:not(.titlebar) { background: none; box-shadow: none
 
 .background.tiled .titlebar:backdrop, .background.tiled .titlebar, .background.tiled-top .titlebar:backdrop, .background.tiled-top .titlebar, .background.tiled-right .titlebar:backdrop, .background.tiled-right .titlebar, .background.tiled-bottom .titlebar:backdrop, .background.tiled-bottom .titlebar, .background.tiled-left .titlebar:backdrop, .background.tiled-left .titlebar, .background.maximized .titlebar:backdrop, .background.maximized .titlebar, .background.solid-csd .titlebar:backdrop, .background.solid-csd .titlebar { border-top-left-radius: 0; border-top-right-radius: 0; }
 
-window separator:first-child + headerbar:backdrop, window separator:first-child + headerbar, window headerbar:first-child:backdrop, window headerbar:first-child { border-top-left-radius: 7px; }
+window separator:first-child + headerbar:backdrop, window separator:first-child + headerbar, window headerbar:first-child:backdrop, window headerbar:first-child { border-top-left-radius: 15px; }
 
-window headerbar:last-child:backdrop, window headerbar:last-child { border-top-right-radius: 7px; }
+window headerbar:last-child:backdrop, window headerbar:last-child { border-top-right-radius: 15px; }
 
-window stack headerbar:first-child:backdrop, window stack headerbar:first-child, window stack headerbar:last-child:backdrop, window stack headerbar:last-child { border-top-left-radius: 7px; border-top-right-radius: 7px; }
+window stack headerbar:first-child:backdrop, window stack headerbar:first-child, window stack headerbar:last-child:backdrop, window stack headerbar:last-child { border-top-left-radius: 15px; border-top-right-radius: 15px; }
 
 window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerbar:last-child, window.tiled headerbar:only-child, window.tiled headerbar:backdrop, window.tiled headerbar:backdrop:first-child, window.tiled headerbar:backdrop:last-child, window.tiled headerbar:backdrop:only-child, window.tiled-top headerbar, window.tiled-top headerbar:first-child, window.tiled-top headerbar:last-child, window.tiled-top headerbar:only-child, window.tiled-top headerbar:backdrop, window.tiled-top headerbar:backdrop:first-child, window.tiled-top headerbar:backdrop:last-child, window.tiled-top headerbar:backdrop:only-child, window.tiled-right headerbar, window.tiled-right headerbar:first-child, window.tiled-right headerbar:last-child, window.tiled-right headerbar:only-child, window.tiled-right headerbar:backdrop, window.tiled-right headerbar:backdrop:first-child, window.tiled-right headerbar:backdrop:last-child, window.tiled-right headerbar:backdrop:only-child, window.tiled-bottom headerbar, window.tiled-bottom headerbar:first-child, window.tiled-bottom headerbar:last-child, window.tiled-bottom headerbar:only-child, window.tiled-bottom headerbar:backdrop, window.tiled-bottom headerbar:backdrop:first-child, window.tiled-bottom headerbar:backdrop:last-child, window.tiled-bottom headerbar:backdrop:only-child, window.tiled-left headerbar, window.tiled-left headerbar:first-child, window.tiled-left headerbar:last-child, window.tiled-left headerbar:only-child, window.tiled-left headerbar:backdrop, window.tiled-left headerbar:backdrop:first-child, window.tiled-left headerbar:backdrop:last-child, window.tiled-left headerbar:backdrop:only-child, window.maximized headerbar, window.maximized headerbar:first-child, window.maximized headerbar:last-child, window.maximized headerbar:only-child, window.maximized headerbar:backdrop, window.maximized headerbar:backdrop:first-child, window.maximized headerbar:backdrop:last-child, window.maximized headerbar:backdrop:only-child, window.fullscreen headerbar, window.fullscreen headerbar:first-child, window.fullscreen headerbar:last-child, window.fullscreen headerbar:only-child, window.fullscreen headerbar:backdrop, window.fullscreen headerbar:backdrop:first-child, window.fullscreen headerbar:backdrop:last-child, window.fullscreen headerbar:backdrop:only-child, window.solid-csd headerbar, window.solid-csd headerbar:first-child, window.solid-csd headerbar:last-child, window.solid-csd headerbar:only-child, window.solid-csd headerbar:backdrop, window.solid-csd headerbar:backdrop:first-child, window.solid-csd headerbar:backdrop:last-child, window.solid-csd headerbar:backdrop:only-child { border-top-left-radius: 0; border-top-right-radius: 0; }
 
@@ -759,7 +759,7 @@ menubar > menuitem:hover, .menubar > menuitem:hover { box-shadow: inset 0 -3px #
 
 menubar > menuitem:disabled, .menubar > menuitem:disabled { color: rgba(152, 152, 150, 0.9); box-shadow: none; }
 
-menubar .csd.popup decoration, .menubar .csd.popup decoration { border-radius: 0; }
+menubar .csd.popup decoration, .menubar .csd.popup decoration { border-radius: 0px; }
 
 .background.popup { background-color: transparent; }
 
