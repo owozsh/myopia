@@ -1473,7 +1473,7 @@ printdialog paper:backdrop { color: rgba(152, 152, 150, 0.9); border-color: rgba
 printdialog .dialog-action-box { margin: 12px; }
 
 /********** Frames * */
-frame > border, .frame { box-shadow: none; margin: 0; padding: 0; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5); }
+frame > border, .frame { box-shadow: none; margin: 0; padding: 0; border-radius: 0; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5); }
 
 frame > border.flat, .frame.flat { border-style: none; }
 
@@ -1936,8 +1936,6 @@ window { border: 1px solid rgba(255, 255, 255, 0.15); border-top: 1px solid rgba
 vte-terminal { padding: 10px; }
 
 terminal-window box notebook { border: 1px solid rgba(255, 255, 255, 0.1); }
-
-placessidebar.frame { border-radius: 0; border: none; border-right: 1px solid rgba(255, 255, 255, 0.15); box-shadow: none; }
 
 /* GTK NAMED COLORS ---------------- use responsibly! */
 /*

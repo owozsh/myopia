@@ -3735,7 +3735,7 @@ frame > border,
   box-shadow: none;
   margin: 0;
   padding: 0;
-  border-radius: $b-br;
+  border-radius: 0;
   border: $l-b;
   box-shadow: $s-b;
 
@@ -4840,12 +4840,5 @@ vte-terminal {
 
 terminal-window box notebook{
 	border: 1px solid rgba( 255, 255, 255, 0.1) ; 
-}
-
-placessidebar.frame {
-  border-radius: 0;
-  border: none;
-  border-right: $l-b;
-  box-shadow: none;
 }
 
