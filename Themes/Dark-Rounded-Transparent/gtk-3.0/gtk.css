@@ -640,9 +640,9 @@ headerbar.titlebar headerbar:not(.titlebar) { background: none; box-shadow: none
 
 .background.tiled .titlebar:backdrop, .background.tiled .titlebar, .background.tiled-top .titlebar:backdrop, .background.tiled-top .titlebar, .background.tiled-right .titlebar:backdrop, .background.tiled-right .titlebar, .background.tiled-bottom .titlebar:backdrop, .background.tiled-bottom .titlebar, .background.tiled-left .titlebar:backdrop, .background.tiled-left .titlebar, .background.maximized .titlebar:backdrop, .background.maximized .titlebar, .background.solid-csd .titlebar:backdrop, .background.solid-csd .titlebar { border-top-left-radius: 0; border-top-right-radius: 0; }
 
-window separator:first-child + headerbar:backdrop, window separator:first-child + headerbar, window headerbar:first-child:backdrop, window headerbar:first-child { border-top-left-radius: 15px; }
+window separator:first-child + headerbar:backdrop, window separator:first-child + headerbar, window headerbar:first-child:backdrop, window headerbar:first-child { border-top-left-radius: 15px; border-right: none; box-shadow: none; }
 
-window headerbar:last-child:backdrop, window headerbar:last-child { border-top-right-radius: 15px; }
+window headerbar:last-child:backdrop, window headerbar:last-child { border-top-right-radius: 15px; border-left: none; box-shadow: -1px 0 rgba(255, 255, 255, 0.15); }
 
 window stack headerbar:first-child:backdrop, window stack headerbar:first-child, window stack headerbar:last-child:backdrop, window stack headerbar:last-child { border-top-left-radius: 15px; border-top-right-radius: 15px; }
 
