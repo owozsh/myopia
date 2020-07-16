@@ -642,7 +642,7 @@ headerbar.titlebar headerbar:not(.titlebar) { background: none; box-shadow: none
 
 window separator:first-child + headerbar:backdrop, window separator:first-child + headerbar, window headerbar:first-child:backdrop, window headerbar:first-child { border-top-left-radius: 15px; border-right: none; box-shadow: none; }
 
-window headerbar:last-child:backdrop, window headerbar:last-child { border-top-right-radius: 15px; border-left: none; box-shadow: -1px 0 rgba(255, 255, 255, 0.15); }
+window headerbar:last-child:backdrop, window headerbar:last-child { border-top-right-radius: 15px; box-shadow: none; }
 
 window stack headerbar:first-child:backdrop, window stack headerbar:first-child, window stack headerbar:last-child:backdrop, window stack headerbar:last-child { border-top-left-radius: 15px; border-top-right-radius: 15px; }
 

@@ -1814,7 +1814,7 @@ headerbar { // headerbar border rounding
 
   window separator:first-child + &,
   window &:first-child { &:backdrop, & { border-top-left-radius: $w-br; border-right: none; box-shadow: none;}}
-  window &:last-child { &:backdrop, & { border-top-right-radius: $w-br; border-left: none; box-shadow: -1px 0 $hg ;}}
+  window &:last-child { &:backdrop, & { border-top-right-radius: $w-br; box-shadow: none;}}
 
   window stack & { // tackles the stacked headerbars case
     &:first-child, &:last-child {
