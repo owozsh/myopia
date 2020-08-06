@@ -8,7 +8,9 @@
 
 ## Warning
 
-This is a work in progress. It has some bugs still.
+Status: Looking for bugs to fix.
+
+This theme was only tested on Gnome 3.6+.
 
 The blur doesn't work, it uses transparency only.
 
@@ -16,20 +18,32 @@ The blur doesn't work, it uses transparency only.
 
 Make sure you have the "User Themes" extension turned on.
 
-To install, copy one of the themes in the `Themes` folder and paste it in `~/.local/share/themes` or `~/.themes`, and select the theme in Gnome Tweaks.
+To install, copy the `Myopia` folder and paste it in `~/.local/share/themes` or `~/.themes`, and select the theme in Gnome Tweaks.
+
+### Variations of this theme
+
+There are some variations of this theme on the 'Variations' folder, they're not as updated as the default one. Feel free to use them and pull some new ones ;)
 
 ## Tweaking
 
-Make sure to tweak themes inside the original Myopia-GTK repository.
+Make sure to tweak themes inside the original Myopia-Theme repository.
 
-There are some basic customization on every theme folder, called `Myopia-Settings.scss`. You can customize colors, transparency and other stuff in this file.
+You can customize colors, transparency and other stuff in the file `Settings.scss` (Inside the 'Tweaking' folder). For advanced tweaks, use the Advanced folder.
 
-Then, open the selected theme folder on terminal and type `./parse-sass.sh`, this will generate your new css file on gtk-3.0.
+Then, inside the 'Tweaking' folder, open the terminal and type `./parse.sh`, this will recreate the 'Myopia' folder with your new settings.
 
 After all of these steps, follow the Installation guide to get your new Myopia customized theme ;)
 
-### Donate! 
+## Donate!
 
 Making this theme real and good takes a lot of time of designing and coding. So if you like the project, consider donating to keep me motivated maintaining it :)
 
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6B3MUW2KH4LXN&source=url
+
+## What's coming next?
+
+- Bug Fixes
+
+- Icons
+
+- Blur support ( waiting gtk-4.0 )
