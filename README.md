@@ -6,6 +6,8 @@
 
 ![](.screenshots/02.png)
 
+![](.screenshots/03.png)
+
 ## Warning
 
 Status: Looking for bugs to fix.
