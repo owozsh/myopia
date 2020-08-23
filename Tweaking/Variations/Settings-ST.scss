@@ -27,7 +27,7 @@ $t-p: 10px; // Terminal Padding
 
 $variant: 'dark';
 
-@import '../../Base/colors';
-@import '../../Base/drawing';
-@import '../../Base/common';
-@import '../../Base/colors-public';
+@import "../Advanced/Applications/Colors";
+@import "../Advanced/Applications/Drawing";
+@import "../Advanced/Applications/Base";
+@import "../Advanced/Applications/Colors-Public";

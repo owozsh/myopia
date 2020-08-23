@@ -670,7 +670,7 @@ window.devel headerbar.titlebar:not(.selection-mode):backdrop { background: rgba
 .path-bar button.slider-button { padding-left: 0; padding-right: 0; }
 
 /************** Tree Views * */
-treeview.view { border-left-color: rgba(184, 184, 183, 0.75); border-top-color: rgba(22, 22, 22, 0.8); }
+treeview.view { background-color: rgba(22, 22, 22, 0.8); border-left-color: rgba(184, 184, 183, 0.75); border-top-color: rgba(22, 22, 22, 0.8); }
 
 * { -GtkTreeView-horizontal-separator: 4; -GtkTreeView-grid-line-width: 1; -GtkTreeView-grid-line-pattern: ''; -GtkTreeView-tree-line-width: 1; -GtkTreeView-tree-line-pattern: ''; -GtkTreeView-expander-size: 16; }
 
@@ -949,7 +949,7 @@ notebook > header.bottom tab { padding-top: 4px; }
 
 notebook > stack:not(:only-child) { background-color: rgba(40, 40, 40, 0.3); border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5); }
 
-notebook > stack:not(:only-child):backdrop { background-color: rgba(25, 25, 25, 0.5); }
+notebook > stack:not(:only-child):backdrop { background-color: rgba(25, 25, 25, 0.5); border: none; }
 
 /************** Scrollbars * */
 scrollbar { background-color: rgba(22, 22, 22, 0.65); transition: 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
@@ -1528,9 +1528,11 @@ row.activatable:active { box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
 
 row.activatable:backdrop:hover { background-color: transparent; }
 
+row.activatable:selected { background-color: rgba(255, 255, 255, 0.3); }
+
 row.activatable:selected:active { box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
 
-row.activatable:selected.has-open-popup, row.activatable:selected:hover { background-color: #b1b1b1; }
+row.activatable:selected.has-open-popup, row.activatable:selected:hover { background-color: rgba(255, 255, 255, 0.5); }
 
 row.activatable:selected:backdrop { background-color: #AAA; }
 
@@ -1626,7 +1628,7 @@ separator.sidebar.selection-mode, .selection-mode separator.sidebar { background
 /**************** File chooser * */
 row image.sidebar-icon { opacity: 0.7; }
 
-placessidebar { border-right: 1px solid rgba(255, 255, 255, 0.15); }
+placessidebar viewport list { border-right: 1px solid rgba(255, 255, 255, 0.15); }
 
 placessidebar row { min-height: 36px; padding: 0px; }
 
@@ -1662,7 +1664,7 @@ placessidebar row.sidebar-new-bookmark-row { color: #AAA; }
 
 placessidebar row:drop(active):not(:disabled) { color: #68963d; box-shadow: inset 0 1px #68963d, inset 0 -1px #68963d; }
 
-placessidebar row:drop(active):not(:disabled):selected { color: #ffffff; background-color: #68963d; }
+placessidebar row:drop(active):not(:disabled):selected { color: #ffffff; background-color: rgba(255, 255, 255, 0.15); }
 
 placesview .server-list-button > image { transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); -gtk-icon-transform: rotate(0turn); }
 
@@ -1932,6 +1934,8 @@ popover.emoji-completion contents row box { padding: 2px 10px; }
 popover.emoji-completion .emoji:hover { background: rgba(37, 37, 37, 0.98); }
 
 window { border: 1px solid rgba(255, 255, 255, 0.15); border-top: 1px solid rgba(0, 0, 0, 0.5); }
+
+window:backdrop { border: none; }
 
 vte-terminal { padding: 10px; }
 

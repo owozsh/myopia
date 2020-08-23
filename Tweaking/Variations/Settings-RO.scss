@@ -1,34 +1,32 @@
-
 /**** | Myopia Theme Settings | ****/
 
 $w-br: 15px; // Window Border Radius
 $b-br: 10px; // Button Border Radius
 
-$h-size: 'default'; // Headerbar size: 'compact' or 'default'
+$h-size: "default"; // Headerbar size: 'compact' or 'default'
 
-$bg: rgba( 22, 22, 22, 0.8); // Window Background
-$o-bg: rgba( 24, 24, 24, 0.98); // Opaquer version of the Background
-$h-bg: rgba(40, 40, 40, 0.8); // Headerbar Background
+$bg: #222; // Window Background
+$o-bg: rgba(24, 24, 24, 0.98); // Opaquer version of the Background
+$h-bg: #2e2e2e; // Headerbar Background
 $d-bg: rgba(0, 0, 0, 0.5); // Dark Base - Not so important
 $x-bg: rgba(255, 255, 255, 0.1); // Buttons, Entries, ... Background
 $l-bg: rgba(255, 255, 255, 0.05); // List and Sidebar Background
 
-$b-s: rgba(255, 255, 255, 0.3);  // Selected Button Color
-$sel: #AAA; // Selection Color
+$b-s: rgba(255, 255, 255, 0.3); // Selected Button Color
+$sel: #aaa; // Selection Color
 $hg: rgba(255, 255, 255, 0.15); // Highlight Color
 
 $s-b: 0 0 0 0 #000, 0 0 0 1px rgba(0, 0, 0, 0.5); // Color of the simulated Window's second (dark) border
 $l-b: 1px solid rgba(255, 255, 255, 0.15); // Light Borders
 $d-b: 1px solid rgba(0, 0, 0, 0.5); // Dark Borders
 
-$t-p: 10px; // Terminal Padding
+$t-p: 20px; // Terminal Padding
 
 /**** | Generate the css file | ****/
 
-$variant: 'dark';
+$variant: "dark";
 
-@import '../../Base/colors';
-@import '../../Base/drawing';
-@import '../../Base/common';
-@import '../../Base/colors-public';
-
+@import "../Advanced/Applications/Colors";
+@import "../Advanced/Applications/Drawing";
+@import "../Advanced/Applications/Base";
+@import "../Advanced/Applications/Colors-Public";

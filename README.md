@@ -22,7 +22,7 @@ To install, copy the `Myopia` folder and paste it in `~/.local/share/themes` or 
 
 ### Variations of this theme
 
-There are some variations of this theme on the 'Variations' folder, they're not as updated as the default one. Feel free to use them and pull some new ones ;)
+There are some variations of this theme on the 'Variations' folder ;)
 
 ## Tweaking
 
