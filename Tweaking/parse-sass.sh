@@ -1,18 +1,28 @@
-#! /bin/bash
+#!/bin/bash
+set -ueo pipefail
 
-if [ ! "$(which sassc 2> /dev/null)" ]; then
-   echo sassc needs to be installed to generate the css.
-   exit 1
+if [[ ! "$(command -v sassc)" ]]; then
+  echo "'sassc' needs to be installed to generate the CSS."
+  exit 1
 fi
 
-SASSC_OPT="-M -t compact"
+SASSC_OPT=('-M' '-t' 'compact')
 
-echo Generating the css...
+_SHAPE_VARIANTS=('' '-R')
+_ALPHA_VARIANTS=('' '-T')
 
-sassc $SASSC_OPT Settings.scss ../Myopia/gtk-3.0/gtk.css
+if [[ -n "${SHAPE_VARIANTS:-}" ]]; then
+  IFS=', ' read -r -a _SHAPE_VARIANTS <<< "${SHAPE_VARIANTS:-}"
+fi
 
-sassc $SASSC_OPT ./Variations/Settings-RO.scss ../Variations/Myopia-RO/gtk-3.0/gtk.css
+if [[ -n "${ALPHA_VARIANTS:-}" ]]; then
+  IFS=', ' read -r -a _ALPHA_VARIANTS <<< "${ALPHA_VARIANTS:-}"
+fi
 
-sassc $SASSC_OPT ./Variations/Settings-RT.scss ../Variations/Myopia-RT/gtk-3.0/gtk.css
+echo "== Generating the CSS..."
 
-sassc $SASSC_OPT ./Variations/Settings-ST.scss ../Variations/Myopia-ST/gtk-3.0/gtk.css
+for shape in "${_SHAPE_VARIANTS[@]}"; do
+  for alpha in "${_ALPHA_VARIANTS[@]}"; do
+    sassc "${SASSC_OPT[@]}" "./Variations/Settings$shape$alpha.scss" "../Variations/Myopia$shape$alpha/gtk-3.0/gtk.css"
+  done
+done
