@@ -2,19 +2,13 @@
 
 ![](.screenshots/00.png)
 
-![](.screenshots/01.png)
-
-![](.screenshots/02.png)
-
-![](.screenshots/03.png)
-
 ## Warning
 
 Status: Looking for bugs to fix.
 
 This theme was only tested on Gnome 3.6+.
 
-The blur doesn't work, it uses transparency only.
+For blur support, install the 'blur-provider' gnome extension. It doesn't work properly yet, but it looks good :)
 
 ## Installation
 
