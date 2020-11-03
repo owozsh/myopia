@@ -6,7 +6,7 @@
 
 Status: Looking for bugs to fix.
 
-This theme was only tested on Gnome 3.6+.
+This theme was only tested on Gnome 3.36+.
 
 For blur support, install the 'blur-provider' gnome extension (Only for X11). It doesn't work properly yet, but it looks good :)
 
