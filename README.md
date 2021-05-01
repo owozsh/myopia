@@ -34,7 +34,7 @@ After all of these steps, follow the Installation guide to get your new Myopia c
 
 Making this theme real and good takes a lot of time of designing and coding. So if you like the project, consider donating to keep me motivated maintaining it :)
 
-https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6B3MUW2KH4LXN&source=url
+https://www.buymeacoffee.com/owozsh
 
 ## What's coming next?
 
