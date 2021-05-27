@@ -1,14 +1,12 @@
 # Myopia Theme for GTK+
 
-![](.screenshots/0.png)
+![](.screenshots/1.png)
 
 ## Warning
 
-Status: Looking for bugs to fix.
+This theme was only tested on Gnome 3.36 and 3.38.
 
-This theme was only tested on Gnome 3.36+.
-
-For blur support, install the 'blur-provider' gnome extension (Only for X11). It doesn't work properly yet, but it looks good :)
+For blur support, install the 'blur-me' gnome extension.
 
 ## Installation
 
@@ -36,10 +34,3 @@ Making this theme real and good takes a lot of time of designing and coding. So 
 
 https://www.buymeacoffee.com/owozsh
 
-## What's coming next?
-
-- Bug Fixes
-
-- Icons
-
-- Blur support ( waiting gtk-4.0 )
